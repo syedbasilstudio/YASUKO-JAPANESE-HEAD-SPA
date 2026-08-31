@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Yasuko Japanese Head Spa | Japanese Head Spa, Lymphatic & Wellness — Tenterden</title>
+<meta name="description" content="Yasuko is an independent Japanese Head Spa and wellness practice in Tenterden, Kent, offering deeply relaxing head spa rituals, lymphatic treatments, massage and selected beauty treatments." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        forest: '#1D2924', espresso: '#1B1916', ivory: '#F8F5EF',
+        stone: '#D8D0C4', sage: '#879487', gold: '#B99A6B', charcoal: '#242424'
+      },
+      fontFamily: {
+        heading: ['Cormorant Garamond','ui-serif','Georgia','serif'],
+        body: ['Plus Jakarta Sans','ui-sans-serif','system-ui','sans-serif'],
+        display: ['Cormorant Garamond','ui-serif','Georgia','serif'],
+        serif: ['Cormorant Garamond','ui-serif','Georgia','serif']
+      }
+    }
+  }
+}
+</script>
+<style>
+:root{ --forest:#1D2924; --espresso:#1B1916; --ivory:#F8F5EF; --stone:#D8D0C4; --sage:#879487; --gold:#B99A6B; }
+*{ border-color: var(--stone); }
+html{ scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+body{ background:var(--ivory); color:var(--forest); font-family:'Plus Jakarta Sans',sans-serif; font-weight:300; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; overflow-x:hidden; }
+::selection{ background:var(--gold); color:var(--forest); }
+::-webkit-scrollbar{ width:8px; }
+::-webkit-scrollbar-track{ background:var(--ivory); }
+::-webkit-scrollbar-thumb{ background:var(--stone); border-radius:0; }
+::-webkit-scrollbar-thumb:hover{ background:var(--sage); }
+
+.font-serif-display{ font-family:'Cormorant Garamond',serif; font-weight:400; letter-spacing:-0.02em; }
+.label-eyebrow{ font-family:'Plus Jakarta Sans',sans-serif; font-weight:500; text-transform:uppercase; letter-spacing:0.3em; font-size:11px; }
+.gold-rule{ height:1px; background:linear-gradient(90deg,transparent,var(--gold),transparent); }
+.hairline{ height:1px; background:rgba(185,154,107,0.35); }
+
+.reveal{ opacity:0; transform:translateY(28px); transition:opacity 1.1s cubic-bezier(0.22,1,0.36,1), transform 1.1s cubic-bezier(0.22,1,0.36,1); will-change:opacity,transform; }
+.reveal.is-visible{ opacity:1; transform:translateY(0); }
+.reveal-delay-1{ transition-delay:0.12s; } .reveal-delay-2{ transition-delay:0.24s; } .reveal-delay-3{ transition-delay:0.36s; } .reveal-delay-4{ transition-delay:0.48s; }
+
+.ken-burns{ animation:kenBurns 18s ease-out forwards; }
+@keyframes kenBurns{ from{ transform:scale(1); } to{ transform:scale(1.05); } }
+.ambient-drift{ animation:ambientDrift 14s ease-in-out infinite alternate; }
+@keyframes ambientDrift{ from{ transform:translate3d(0,0,0) scale(1.02); opacity:0.5; } to{ transform:translate3d(0,-1.5%,0) scale(1.05); opacity:0.8; } }
+.draw-line{ transform:scaleX(0); transform-origin:left; animation:drawLine 1.6s cubic-bezier(0.22,1,0.36,1) 0.2s forwards; }
+@keyframes drawLine{ to{ transform:scaleX(1); } }
+.fade-up-soft{ opacity:0; transform:translateY(12px); animation:fadeUpSoft 1.2s cubic-bezier(0.22,1,0.36,1) forwards; }
+@keyframes fadeUpSoft{ to{ opacity:1; transform:translateY(0); } }
+.scroll-cue{ animation:scrollCue 2.4s ease-in-out infinite; }
+@keyframes scrollCue{ 0%,100%{ transform:scaleY(0.4); opacity:0.4; } 50%{ transform:scaleY(1); opacity:1; } }
+.glass{ background:rgba(248,245,239,0.06); backdrop-filter:blur(18px) saturate(140%); -webkit-backdrop-filter:blur(18px) saturate(140%); }
+.glass-dark{ background:rgba(27,25,22,0.55); backdrop-filter:blur(20px) saturate(140%); -webkit-backdrop-filter:blur(20px) saturate(140%); }
+.no-scrollbar::-webkit-scrollbar{ display:none; } .no-scrollbar{ -ms-overflow-style:none; scrollbar-width:none; }
+.text-balance{ text-wrap:balance; }
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important; }
+  .reveal{ opacity:1; transform:none; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div id="preloader" class="fixed inset-0 z-[100] bg-forest flex flex-col items-center justify-center transition-all duration-700 ease-out">
+  <div class="absolute inset-0 opacity-40 ambient-drift pointer-events-none" style="background:radial-gradient(120% 80% at 50% 40%, rgba(185,154,107,0.10), transparent 60%), radial-gradient(80% 60% at 50% 70%, rgba(135,148,135,0.08), transparent 70%);"></div>
+  <div class="relative z-10 flex flex-col items-center text-center px-6">
+    <p class="label-eyebrow text-stone/70 fade-up-soft" style="animation-delay:0.3s;">Tenterden · Kent</p>
+    <h1 class="font-serif-display text-ivory mt-6 fade-up-soft" style="font-size:clamp(2.6rem,8vw,5.5rem);line-height:1.05;animation-delay:0.5s;">Yasuko</h1>
+    <div class="w-40 mt-8 origin-left"><div class="draw-line h-px w-full" style="background:linear-gradient(90deg,transparent,#B99A6B,transparent);"></div></div>
+    <p class="label-eyebrow text-gold mt-8 fade-up-soft" style="animation-delay:1.2s;">A Moment Just For You</p>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header id="nav" class="fixed top-0 inset-x-0 z-50 transition-all duration-500 bg-transparent py-5">
+  <div class="mx-auto max-w-[1400px] px-5 sm:px-8 flex items-center justify-between">
+    <a href="#top" class="font-serif-display text-ivory text-xl sm:text-2xl tracking-tight">Yasuko</a>
+    <nav class="hidden lg:flex items-center gap-8">
+      <a href="#head-spa" class="label-eyebrow text-stone/80 hover:text-gold transition-colors duration-300">Head Spa</a>
+      <a href="#rituals" class="label-eyebrow text-stone/80 hover:text-gold transition-colors duration-300">Rituals</a>
+      <a href="#wellness" class="label-eyebrow text-stone/80 hover:text-gold transition-colors duration-300">Wellness</a>
+      <a href="#reviews" class="label-eyebrow text-stone/80 hover:text-gold transition-colors duration-300">Reviews</a>
+      <a href="#directory" class="label-eyebrow text-stone/80 hover:text-gold transition-colors duration-300">Price List</a>
+      <a href="#visit" class="label-eyebrow text-stone/80 hover:text-gold transition-colors duration-300">Visit</a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <a id="navBook" href="#" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex label-eyebrow text-forest bg-ivory px-5 py-3 hover:bg-gold hover:text-forest transition-colors duration-300">Book Your Ritual</a>
+      <button id="menuOpen" class="lg:hidden text-ivory p-2 -mr-2" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="mobileMenu" class="fixed inset-0 z-[60] bg-forest transition-all duration-700 ease-out opacity-0 invisible">
+  <div class="absolute inset-0 opacity-30 pointer-events-none" style="background:radial-gradient(100% 70% at 70% 30%, rgba(185,154,107,0.12), transparent 60%);"></div>
+  <div class="relative h-full flex flex-col px-6 py-6">
+    <div class="flex items-center justify-between">
+      <span class="font-serif-display text-ivory text-xl">Yasuko</span>
+      <button id="menuClose" class="text-ivory p-2 -mr-2" aria-label="Close menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <nav id="mobileLinks" class="flex-1 flex flex-col justify-center gap-5 sm:gap-7"></nav>
+    <a id="mobileBook" href="#" target="_blank" rel="noopener noreferrer" class="label-eyebrow text-forest bg-ivory px-6 py-4 text-center hover:bg-gold transition-colors duration-300">Book Your Ritual</a>
+  </div>
+</div>
+
+<main>
+<!-- ============ HERO ============ -->
+<section id="top" class="relative h-[100svh] min-h-[640px] w-full overflow-hidden bg-forest">
+  <div class="absolute inset-0">
+    <img id="heroImg" src="" alt="Japanese head spa atmosphere — soft steam and water over dark stone" class="w-full h-full object-cover ken-burns" />
+    <div class="absolute inset-0" style="background:linear-gradient(180deg, rgba(27,25,22,0.55) 0%, rgba(29,41,36,0.45) 40%, rgba(27,25,22,0.85) 100%);"></div>
+  </div>
+  <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
+    <p class="label-eyebrow text-stone/90 fade-up-soft" style="animation-delay:0.2s;">Japanese Head Spa · Tenterden</p>
+    <h1 class="font-serif-display text-ivory mt-7 fade-up-soft text-balance" style="font-size:clamp(2.6rem,7vw,6rem);line-height:1.02;animation-delay:0.45s;">Escape the everyday.<br/>Return to you.</h1>
+    <p class="max-w-xl text-stone/85 mt-7 fade-up-soft font-light" style="font-size:clamp(1rem,1.4vw,1.18rem);line-height:1.7;animation-delay:0.7s;">From deeply relaxing Japanese Head Spa rituals to lymphatic, massage and selected beauty treatments — every experience at Yasuko is designed to give you time to switch off and feel your best.</p>
+    <div class="flex flex-col sm:flex-row items-center gap-4 mt-10 fade-up-soft" style="animation-delay:0.95s;">
+      <a id="heroBook" href="#" target="_blank" rel="noopener noreferrer" class="label-eyebrow text-forest bg-ivory px-8 py-4 hover:bg-gold transition-colors duration-300 w-full sm:w-auto text-center">Book Your Ritual</a>
+      <a href="#head-spa" class="label-eyebrow text-ivory border border-ivory/40 px-8 py-4 hover:border-gold hover:text-gold transition-colors duration-300 w-full sm:w-auto text-center">Explore the Head Spa</a>
+    </div>
+  </div>
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-3">
+    <span class="label-eyebrow text-stone/70">Scroll to begin</span>
+    <div class="w-px h-12 bg-gold/40 origin-top scroll-cue"></div>
+  </div>
+</section>
+
+<!-- ============ BRAND INTRO ============ -->
+<section class="bg-ivory py-24 sm:py-36">
+  <div class="mx-auto max-w-[1100px] px-6 sm:px-10 text-center">
+    <div class="reveal"><span class="label-eyebrow inline-block text-sage">Welcome to Yasuko</span></div>
+    <div class="reveal reveal-delay-1 mt-7"><h2 class="font-serif-display text-forest text-balance leading-[1.02]" style="font-size:clamp(2.2rem,5vw,4rem);">Beauty is more than<br/>how you look.</h2></div>
+    <div class="reveal reveal-delay-2"><p class="mt-8 text-sage font-light max-w-2xl mx-auto" style="font-size:clamp(1.05rem,1.4vw,1.25rem);line-height:1.8;">It is how you feel when the world slows down for a moment.</p></div>
+    <div class="reveal reveal-delay-3"><p class="mt-6 text-forest/70 font-light max-w-2xl mx-auto" style="font-size:1.05rem;line-height:1.8;">At Yasuko, head spa and wellness experiences are designed to give you time to pause, reset and enjoy a little time for yourself.</p></div>
+    <div id="trustPoints" class="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-px bg-stone/40"></div>
+  </div>
+</section>
+
+<!-- ============ SIGNATURE HEAD SPA ============ -->
+<section id="head-spa" class="relative bg-forest text-ivory overflow-hidden">
+  <div class="absolute inset-0" style="background:radial-gradient(120% 90% at 30% 20%, rgba(185,154,107,0.10), transparent 55%), radial-gradient(100% 80% at 80% 80%, rgba(135,148,135,0.08), transparent 60%), linear-gradient(180deg, rgba(29,41,36,0.85), rgba(27,25,22,0.92));"></div>
+  <div class="relative z-10 mx-auto max-w-[1200px] px-6 sm:px-10 py-28 sm:py-40">
+    <div class="reveal"><span class="label-eyebrow inline-block text-stone/80">The Signature Ritual</span></div>
+    <div class="reveal reveal-delay-1 mt-7"><h2 class="font-serif-display text-ivory text-balance" style="font-size:clamp(3rem,9vw,7rem);line-height:0.98;">Japanese<br/>Head Spa.</h2></div>
+    <div class="reveal reveal-delay-2"><p class="mt-10 max-w-xl text-stone/85 font-light" style="font-size:1.15rem;line-height:1.8;">A Japanese Head Spa treatment begins with a scalp analysis. Shampoos and hair masks are then tailored for your hair type, before you relax with gentle massage across the scalp, face and neck.</p></div>
+    <div id="headSpaSteps" class="mt-20 grid gap-px bg-white/10"></div>
+    <div class="reveal reveal-delay-2"><a id="headSpaBook" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex label-eyebrow text-forest bg-ivory px-8 py-4 mt-14 hover:bg-gold transition-colors duration-300">Explore the Head Spa</a></div>
+  </div>
+</section>
+
+<!-- ============ TREATMENT RITUALS ============ -->
+<section id="rituals" class="bg-ivory py-24 sm:py-32">
+  <div class="mx-auto max-w-[1200px] px-6 sm:px-10">
+    <div class="reveal"><span class="label-eyebrow inline-block text-sage">Treatment Rituals</span></div>
+    <div class="reveal reveal-delay-1 mt-6"><h2 class="font-serif-display text-forest max-w-3xl text-balance" style="font-size:clamp(2rem,4.5vw,3.4rem);line-height:1.02;">Japanese Head Spa rituals, tailored to you.</h2></div>
+    <div id="ritualsList" class="mt-16 divide-y divide-stone/50 border-y border-stone/50"></div>
+  </div>
+</section>
+
+<!-- ============ LYMPHATIC & WELLNESS ============ -->
+<section id="wellness" class="relative bg-espresso text-ivory overflow-hidden">
+  <div class="absolute inset-0">
+    <img id="massageImg" src="" alt="Massage and wellness atmosphere" class="w-full h-full object-cover opacity-25" />
+    <div class="absolute inset-0" style="background:linear-gradient(180deg, rgba(27,25,22,0.9), rgba(27,25,22,0.96));"></div>
+  </div>
+  <div class="relative z-10 mx-auto max-w-[1200px] px-6 sm:px-10 py-28 sm:py-40 grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+    <div class="lg:col-span-5 lg:sticky lg:top-28">
+      <div class="reveal"><span class="label-eyebrow inline-block text-stone/80">Lymphatic &amp; Wellness</span></div>
+      <div class="reveal reveal-delay-1 mt-7"><h2 class="font-serif-display text-ivory text-balance" style="font-size:clamp(2.6rem,6vw,5rem);line-height:1;">Switch off.<br/>Come back to yourself.</h2></div>
+      <div class="reveal reveal-delay-2"><a id="wellnessBook" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex label-eyebrow px-8 py-4 mt-12 text-ivory border border-ivory/40 hover:bg-ivory hover:text-forest transition-colors duration-300">Explore Wellness</a></div>
+    </div>
+    <div class="lg:col-span-7"><div class="reveal reveal-delay-1" id="wellnessList"></div></div>
+  </div>
+</section>
+
+<!-- ============ FIND YOUR RITUAL ============ -->
+<section class="bg-ivory py-24 sm:py-32 border-t border-stone/40">
+  <div class="mx-auto max-w-[1100px] px-6 sm:px-10">
+    <div class="reveal"><span class="label-eyebrow inline-block text-sage">Find Your Ritual</span></div>
+    <div class="reveal reveal-delay-1 mt-6"><h2 class="font-serif-display text-forest" style="font-size:clamp(2.2rem,5vw,4rem);line-height:1.02;">What do you need today?</h2></div>
+    <div class="reveal reveal-delay-2"><p class="mt-5 text-sage font-light max-w-xl" style="line-height:1.7;">Explore experiences that may match what you're looking for. This is a gentle guide — not a diagnosis.</p></div>
+    <div id="moodButtons" class="mt-12 flex flex-wrap gap-3"></div>
+    <div id="moodResults" class="mt-12 border-t border-stone/50"></div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS CAROUSEL ============ -->
+<section id="reviews" class="bg-ivory py-28 sm:py-40 border-t border-stone/40">
+  <div class="mx-auto max-w-[1000px] px-6 sm:px-10 text-center">
+    <div class="reveal"><span class="label-eyebrow inline-block text-sage">Real Reviews</span></div>
+    <div class="reveal reveal-delay-1 mt-6"><h2 class="font-serif-display text-forest" style="font-size:clamp(2.2rem,5vw,4rem);line-height:1.02;">Their words.<br/>Your next ritual.</h2></div>
+    <div class="reveal reveal-delay-2 mt-10 flex justify-center gap-1" id="reviewStars"></div>
+    <div class="reveal reveal-delay-2 mt-4"><p class="label-eyebrow text-forest/80">5.0 out of 5 stars</p></div>
+    <div class="reveal reveal-delay-3 mt-12">
+      <figure class="min-h-[260px] flex flex-col items-center justify-center">
+        <blockquote id="reviewQuote" class="font-serif-display text-forest italic text-balance max-w-3xl" style="font-size:clamp(1.4rem,3vw,2.4rem);line-height:1.32;"></blockquote>
+        <figcaption id="reviewName" class="label-eyebrow text-gold mt-8"></figcaption>
+      </figure>
+    </div>
+    <div class="flex items-center justify-center gap-8 mt-12">
+      <button id="revPrev" class="text-forest/70 hover:text-gold transition-colors p-3" aria-label="Previous review"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <span id="revCount" class="label-eyebrow text-sage tabular-nums"></span>
+      <button id="revNext" class="text-forest/70 hover:text-gold transition-colors p-3" aria-label="Next review"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+    <div class="reveal reveal-delay-2"><a id="revBook" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex label-eyebrow text-forest bg-ivory border border-forest px-8 py-4 mt-12 hover:bg-forest hover:text-ivory transition-colors duration-300">Book Your Ritual</a></div>
+  </div>
+</section>
+
+<!-- ============ TREATMENT DIRECTORY ============ -->
+<section id="directory" class="bg-ivory py-24 sm:py-32 border-t border-stone/40">
+  <div class="mx-auto max-w-[1200px] px-6 sm:px-10">
+    <div class="reveal"><span class="label-eyebrow inline-block text-sage">Full Treatment Directory</span></div>
+    <div class="reveal reveal-delay-1 mt-6"><h2 class="font-serif-display text-forest" style="font-size:clamp(2.2rem,5vw,4rem);line-height:1.02;">Explore every ritual.</h2></div>
+    <div class="reveal reveal-delay-2 mt-10 flex items-center gap-3 border-b border-forest/30 pb-3 max-w-md">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#879487" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input id="dirSearch" type="text" placeholder="Search treatments..." class="bg-transparent w-full outline-none text-forest placeholder:text-sage font-light text-lg" aria-label="Search treatments" />
+    </div>
+    <div class="reveal reveal-delay-2 mt-8 flex flex-wrap gap-2" id="dirFilters"></div>
+    <div class="mt-12 border-t border-stone/50" id="dirResults"></div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="visit" class="bg-ivory py-24 sm:py-32 border-t border-stone/40">
+  <div class="mx-auto max-w-[1100px] px-6 sm:px-10 text-center">
+    <div class="reveal"><span class="label-eyebrow inline-block text-sage">Find your moment of calm</span></div>
+    <div class="reveal reveal-delay-1 mt-7"><h2 class="font-serif-display text-forest text-balance" style="font-size:clamp(2.6rem,6vw,5rem);line-height:1;">Your next ritual<br/>awaits.</h2></div>
+    <div class="reveal reveal-delay-2 mt-12 flex flex-col items-center gap-6 text-forest/80 font-light">
+      <p class="font-serif-display text-forest" style="font-size:1.6rem;" id="contactName"></p>
+      <div class="flex items-start gap-2 justify-center">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B99A6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="mt-1 shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <address id="contactAddr" class="not-italic leading-relaxed text-left"></address>
+      </div>
+      <a id="contactPhone" href="#" class="flex items-center gap-2 hover:text-gold transition-colors duration-300"></a>
+      <a id="contactEmail" href="#" class="flex items-center gap-2 hover:text-gold transition-colors duration-300"></a>
+    </div>
+    <div class="reveal reveal-delay-3 flex flex-col sm:flex-row items-center justify-center gap-4 mt-12">
+      <a id="contactMaps" href="#" target="_blank" rel="noopener noreferrer" class="label-eyebrow text-forest border border-forest px-7 py-4 hover:bg-forest hover:text-ivory transition-colors duration-300 w-full sm:w-auto text-center">Get Directions</a>
+      <a id="contactCall" href="#" class="label-eyebrow text-forest border border-forest px-7 py-4 hover:bg-forest hover:text-ivory transition-colors duration-300 w-full sm:w-auto text-center">Call Us</a>
+      <a id="contactBook" href="#" target="_blank" rel="noopener noreferrer" class="label-eyebrow text-forest bg-gold px-7 py-4 hover:bg-forest hover:text-ivory transition-colors duration-300 w-full sm:w-auto text-center">Book Your Ritual</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="relative bg-forest text-ivory overflow-hidden">
+  <div class="absolute inset-0">
+    <img id="finalImg" src="" alt="Serene landscape at dusk" class="w-full h-full object-cover opacity-30 ambient-drift" />
+    <div class="absolute inset-0" style="background:linear-gradient(180deg, rgba(29,41,36,0.82), rgba(27,25,22,0.92));"></div>
+  </div>
+  <div class="relative z-10 mx-auto max-w-[1000px] px-6 sm:px-10 py-32 sm:py-48 text-center">
+    <div class="reveal"><h2 class="font-serif-display text-ivory text-balance" style="font-size:clamp(3rem,9vw,7rem);line-height:0.98;">Make time<br/>for you.</h2></div>
+    <div class="reveal reveal-delay-1"><p class="mt-8 text-stone/85 font-light max-w-md mx-auto" style="font-size:1.15rem;line-height:1.8;">Your next moment of calm is waiting.</p></div>
+    <div class="reveal reveal-delay-2 flex flex-col sm:flex-row items-center justify-center gap-4 mt-12">
+      <a id="finalBook" href="#" target="_blank" rel="noopener noreferrer" class="label-eyebrow text-forest bg-ivory px-9 py-4 hover:bg-gold transition-colors duration-300 w-full sm:w-auto text-center">Book Your Ritual</a>
+      <a id="finalCall" href="#" class="label-eyebrow text-ivory border border-ivory/40 px-9 py-4 hover:border-gold hover:text-gold transition-colors duration-300 w-full sm:w-auto text-center"></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-espresso text-ivory py-16 sm:py-20">
+  <div class="mx-auto max-w-[1200px] px-6 sm:px-10">
+    <div class="grid md:grid-cols-12 gap-10">
+      <div class="md:col-span-5">
+        <p class="font-serif-display text-ivory" style="font-size:2rem;" id="footerName"></p>
+        <p class="label-eyebrow text-gold mt-3" id="footerTag"></p>
+        <p class="text-stone/70 font-light mt-6 max-w-xs" style="line-height:1.7;">An independent Japanese Head Spa and wellness practice — head spa rituals, lymphatic treatments, massage and selected beauty treatments in Tenterden, Kent.</p>
+      </div>
+      <div class="md:col-span-3">
+        <p class="label-eyebrow text-stone/60">Experiences</p>
+        <nav id="footerNav" class="mt-5 flex flex-col gap-3"></nav>
+      </div>
+      <div class="md:col-span-4">
+        <p class="label-eyebrow text-stone/60">Contact</p>
+        <div id="footerContact" class="mt-5 flex flex-col gap-3 font-light text-ivory/80"></div>
+        <a id="footerBook" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex label-eyebrow text-forest bg-ivory px-6 py-3 mt-6 hover:bg-gold transition-colors duration-300">Book Your Ritual</a>
+      </div>
+    </div>
+    <div class="hairline mt-14"></div>
+    <p class="text-stone/50 font-light text-sm mt-8" id="footerCopy"></p>
+  </div>
+</footer>
+
+<!-- ============ MOBILE STICKY BAR ============ -->
+<div class="sm:hidden fixed bottom-0 inset-x-0 z-40 glass-dark border-t border-white/10" style="padding-bottom:env(safe-area-inset-bottom);">
+  <div class="grid grid-cols-2">
+    <a id="stickyContact" href="#" class="flex items-center justify-center gap-2 py-3.5 text-ivory label-eyebrow border-r border-white/10">Contact</a>
+    <a id="stickyBook" href="#" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center py-3.5 bg-gold text-forest label-eyebrow">Book</a>
+  </div>
+</div>
+
+<!-- ============ AI CONCIERGE ============ -->
+<button id="conciergeOpen" class="fixed bottom-20 right-5 sm:bottom-5 z-40 flex items-center gap-2 bg-forest text-ivory pl-4 pr-5 py-3.5 rounded-full shadow-lg hover:bg-espresso transition-colors duration-300" aria-label="Open Ask Yasuko concierge">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B99A6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2z"/></svg>
+  <span class="label-eyebrow hidden sm:inline">Ask Yasuko</span>
+</button>
+
+<div id="conciergeOverlay" class="fixed inset-0 z-[70] flex items-end sm:items-end sm:justify-end transition-all duration-500 invisible opacity-0">
+  <div id="conciergeBackdrop" class="absolute inset-0 bg-forest/30 backdrop-blur-sm"></div>
+  <div id="conciergePanel" class="relative w-full sm:w-[420px] sm:m-6 bg-forest text-ivory flex flex-col rounded-t-2xl sm:rounded-2xl border border-white/10 shadow-2xl transition-transform duration-500 translate-y-full sm:translate-y-8" style="max-height:80vh;height:80vh;">
+    <div class="flex items-center justify-between px-5 py-4 border-b border-white/10">
+      <div class="flex items-center gap-2.5">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B99A6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2z"/></svg>
+        <div>
+          <p class="font-serif-display text-ivory" style="font-size:1.15rem;">Ask Yasuko ✦</p>
+          <p class="label-eyebrow text-stone/70">Your Yasuko concierge</p>
+        </div>
+      </div>
+      <button id="conciergeClose" class="text-stone/80 hover:text-ivory p-1" aria-label="Close concierge">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div id="conciergeMessages" class="flex-1 overflow-y-auto no-scrollbar px-5 py-5 space-y-4"></div>
+    <div class="px-5 pb-2 flex gap-2">
+      <a id="conciergeBook" href="#" target="_blank" rel="noopener noreferrer" class="flex-1 label-eyebrow text-forest bg-ivory py-2.5 text-center rounded-full hover:bg-gold transition-colors duration-300">Book Your Ritual</a>
+      <a id="conciergeCall" href="#" class="flex items-center justify-center gap-1.5 label-eyebrow text-ivory border border-white/20 px-4 py-2.5 rounded-full hover:border-gold hover:text-gold transition-colors duration-300">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call
+      </a>
+    </div>
+    <form id="conciergeForm" class="px-5 py-4 border-t border-white/10 flex items-center gap-2">
+      <input id="conciergeInput" type="text" placeholder="Ask your question..." class="flex-1 bg-white/5 border border-white/10 rounded-full px-4 py-3 text-sm text-ivory placeholder:text-stone/50 outline-none focus:border-gold/50 transition-colors" aria-label="Ask your question" />
+      <button type="submit" class="bg-gold text-forest p-3 rounded-full hover:bg-ivory transition-colors duration-300" aria-label="Send">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+    </form>
+  </div>
+</div>
+
+<script>
+/* ============ DATA ============ */
+const BUSINESS = {
+  name: "Yasuko",
+  tagline: "Japanese Head Spa · Tenterden",
+  addressLines: ["4 Coombe House", "Coombe Lane", "Tenterden", "TN30 6HD", "United Kingdom"],
+  phone: "+44 7854 845704",
+  phoneHref: "tel:+447854845704",
+  email: "lin_mckenzie@outlook.com",
+  bookingUrl: "https://www.fresha.com/en-GB/a/the-beauty-ritual-tenterden-coombe-lane-sloreccs/all-offer?menu=true&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUBTs9wZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHss5G2qheIEW6_LJUHTKr5j1sWGhhLF_rCTmCyIxzebuEqhv1meeBS2MwmoP_aem_k1qlGehSi9PkdUwMyjzMWg",
+  mapsUrl: "https://www.google.com/maps/search/?api=1&query=The+Beauty+Ritual+4+Coombe+House+Coombe+Lane+Tenterden+TN30+6HD"
+};
+
+const IMAGES = {
+  hero: "https://media.base44.com/images/public/6a947799517ec63bc1c857d0/bd4ced073_generated_41224619.jpg",
+  signature: "https://media.base44.com/images/public/6a947799517ec63bc1c857d0/09d3edba4_generated_07d0baef.jpg",
+  massage: "https://media.base44.com/images/public/6a947799517ec63bc1c857d0/82420eb97_generated_ea6d90b5.jpg",
+  final: "https://media.base44.com/images/public/6a947799517ec63bc1c857d0/c80a22b71_generated_332375c7.jpg"
+};
+
+const REVIEWS = [
+  { name:"Michelle B.", quote:"An absolute 10 out of 10 experience from start to finish. The water fountain sounds combined with the head massage are total bliss." },
+  { name:"Dawn M.", quote:"The warm misting loop machine is the most relaxing thing I've ever experienced." },
+  { name:"Karen H.", quote:"Japanese head massage and facial body treatment was absolutely amazing. Feel great. Thank you so much. Back soon." },
+  { name:"Sarah M.", quote:"I had the most relaxing foot spa today. It sent me to sleep and my feet are now lovely and soft." },
+  { name:"Sally P.", quote:"If you haven't booked a Japanese head spa treatment with Lin yet, you are seriously missing out!" },
+  { name:"Emma G.", quote:"Such a lovely, therapeutic treat... I left feeling completely rejuvenated and light on my feet." }
+];
+
+const TREATMENTS = [
+  // Japanese Head Spa & Signature Rituals
+  { name:"Head Spa Mini", category:"head-spa", price:45 },
+  { name:"Relax & Reset", category:"head-spa", price:60 },
+  { name:"Revitalise & Recharge", category:"head-spa", price:80 },
+  { name:"Ultimate Ambience", category:"head-spa", price:100 },
+  { name:"Japanese Head Spa 'Cherry Blossom' & Tropic Skin Care", category:"head-spa", note:"Enquire" },
+  { name:"Children's Head Spa (7–15 years)", category:"head-spa", price:20 },
+  // Wellness, Massage & Lymphatic
+  { name:"Head to Toe", category:"wellness", price:70, description:"An indulgent journey combining a soothing Japanese head massage with relaxing neck, shoulder and back massage, finishing with a peppermint & jasmine-inspired Japanese foot spa." },
+  { name:"Headspa / Lymphatic Drainage Facial", category:"wellness", price:65 },
+  { name:"Lymphatic Drainage Sculpt & Lift Facial", category:"wellness", price:49 },
+  { name:"Full Body Lymphatic Drainage Massage", category:"wellness", price:67 },
+  { name:"Full Body Experience", category:"wellness", price:139 },
+  // Foot Spa
+  { name:"Japanese Foot Spa", category:"foot-spa", price:45, description:"A serene foot spa experience designed to help you unwind and leave feeling refreshed." },
+  // Facial & Beauty
+  { name:"The Bacial (Back Facial)", category:"facial-beauty", price:29 },
+  { name:"Korean Lash Lift", category:"facial-beauty", price:55 }
+];
+
+const DIRECTORY_FILTERS = [
+  { key:"all", label:"All" },
+  { key:"head-spa", label:"Head Spa" },
+  { key:"wellness", label:"Wellness & Lymphatic" },
+  { key:"facial-beauty", label:"Facial & Beauty" },
+  { key:"foot-spa", label:"Foot Spa" }
+];
+
+const MOODS = [
+  { key:"relax", label:"I need to relax", matches:["Head Spa Mini","Relax & Reset","Head to Toe","Japanese Foot Spa","Full Body Experience"] },
+  { key:"tension", label:"I need to release tension", matches:["Full Body Lymphatic Drainage Massage","Head to Toe","Headspa / Lymphatic Drainage Facial","Relax & Reset"] },
+  { key:"glow", label:"I want to glow", matches:["Lymphatic Drainage Sculpt & Lift Facial","Headspa / Lymphatic Drainage Facial","The Bacial (Back Facial)"] },
+  { key:"recharge", label:"I want to recharge", matches:["Revitalise & Recharge","Ultimate Ambience","Full Body Experience"] },
+  { key:"special", label:"I'm preparing for something special", matches:["Ultimate Ambience","Full Body Experience","Japanese Head Spa 'Cherry Blossom' & Tropic Skin Care"] }
+];
+
+const HEAD_SPA_STEPS = [
+  { n:"01", title:"Analyse", text:"Scalp assessment." },
+  { n:"02", title:"Tailor", text:"Products selected for your hair type." },
+  { n:"03", title:"Cleanse", text:"A personalised hair and scalp ritual." },
+  { n:"04", title:"Release", text:"Scalp, face and neck massage." },
+  { n:"05", title:"Restore", text:"Time to completely switch off." }
+];
+
+const TRUST_POINTS = [
+  { n:"01", title:"Personalised Rituals" },
+  { n:"02", title:"Head Spa & Wellness" },
+  { n:"03", title:"A Moment to Switch Off" },
+  { n:"04", title:"Tenterden" }
+];
+
+const NAV_LINKS = [
+  { label:"Head Spa", href:"#head-spa" },
+  { label:"Rituals", href:"#rituals" },
+  { label:"Wellness", href:"#wellness" },
+  { label:"Reviews", href:"#reviews" },
+  { label:"Price List", href:"#directory" },
+  { label:"Visit", href:"#visit" }
+];
+
+const formatPrice = (t) => typeof t.price === "number" ? "£"+t.price : (t.note || "");
+const esc = (s) => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+
+/* ============ INIT ASSETS ============ */
+document.getElementById("heroImg").src = IMAGES.hero;
+document.getElementById("massageImg").src = IMAGES.massage;
+document.getElementById("finalImg").src = IMAGES.final;
+
+["navBook","heroBook","headSpaBook","wellnessBook","revBook","contactBook","footerBook","stickyBook","conciergeBook","mobileBook"].forEach(id=>{
+  const a=document.getElementById(id); if(a) a.href=BUSINESS.bookingUrl;
+});
+document.getElementById("contactMaps").href = BUSINESS.mapsUrl;
+document.getElementById("contactPhone").href = BUSINESS.phoneHref;
+document.getElementById("contactCall").href = BUSINESS.phoneHref;
+document.getElementById("stickyContact").href = BUSINESS.phoneHref;
+document.getElementById("conciergeCall").href = BUSINESS.phoneHref;
+document.getElementById("contactEmail").href = "mailto:" + BUSINESS.email;
+
+/* nav + mobile menu */
+const mobileLinks = document.getElementById("mobileLinks");
+NAV_LINKS.forEach((l) => {
+  const a = document.createElement("a");
+  a.href = l.href; a.textContent = l.label;
+  a.className = "font-serif-display text-ivory text-4xl sm:text-6xl leading-none transition-all duration-500 hover:text-gold hover:pl-4";
+  a.addEventListener("click", closeMenu);
+  mobileLinks.appendChild(a);
+});
+
+/* trust points */
+const tp = document.getElementById("trustPoints");
+TRUST_POINTS.forEach((p,i) => {
+  const d = document.createElement("div");
+  d.className = "reveal reveal-delay-" + ((i%4)+1) + " bg-ivory";
+  d.innerHTML = '<div class="px-6 py-10 text-center"><span class="font-serif-display text-gold block" style="font-size:1.6rem;">'+p.n+'</span><span class="label-eyebrow text-forest/80 mt-4 block">'+p.title+'</span></div>';
+  tp.appendChild(d);
+});
+
+/* head spa steps */
+const hss = document.getElementById("headSpaSteps");
+HEAD_SPA_STEPS.forEach((s,i) => {
+  const d = document.createElement("div");
+  d.className = "reveal reveal-delay-" + ((i%4)+1) + " bg-forest";
+  d.innerHTML = '<div class="flex items-start gap-6 px-6 py-8 sm:px-8"><span class="font-serif-display text-gold shrink-0" style="font-size:1.8rem;">'+s.n+'</span><div><h3 class="label-eyebrow text-ivory">'+s.title+'</h3><p class="text-stone/75 font-light mt-2">'+s.text+'</p></div></div>';
+  hss.appendChild(d);
+});
+
+/* treatment rituals (head-spa) */
+const rl = document.getElementById("ritualsList");
+TREATMENTS.filter(t=>t.category==="head-spa").forEach((t,i) => {
+  const d = document.createElement("div");
+  d.className = "reveal reveal-delay-" + ((i%3)+1);
+  d.innerHTML = '<article class="flex items-baseline justify-between gap-6 py-7"><h3 class="font-serif-display text-forest" style="font-size:clamp(1.4rem,2.4vw,2rem);line-height:1.15;">'+t.name+'</h3><div class="flex items-center gap-6 shrink-0"><span class="font-serif-display text-gold" style="font-size:1.6rem;">'+formatPrice(t)+'</span><a href="'+BUSINESS.bookingUrl+'" target="_blank" rel="noopener noreferrer" class="label-eyebrow text-forest border-b border-gold pb-1 hover:text-gold transition-colors duration-300">Book</a></div></article>';
+  rl.appendChild(d);
+});
+
+/* wellness list (dark) */
+const wl = document.getElementById("wellnessList");
+TREATMENTS.filter(t=>t.category==="wellness").forEach((t,i) => {
+  const d = document.createElement("div");
+  d.className = "flex items-baseline justify-between gap-6 py-5 border-b border-white/15";
+  d.innerHTML = '<div><h3 class="font-serif-display text-ivory" style="font-size:1.35rem;line-height:1.2;">'+t.name+'</h3></div><span class="font-serif-display text-gold shrink-0" style="font-size:1.5rem;">'+formatPrice(t)+'</span>';
+  wl.appendChild(d);
+});
+
+/* find your ritual */
+let activeMood = MOODS[0].key;
+const moodBtns = document.getElementById("moodButtons");
+function renderMoods(){
+  moodBtns.innerHTML = "";
+  MOODS.forEach(m => {
+    const b = document.createElement("button");
+    b.textContent = m.label;
+    b.className = "label-eyebrow px-5 py-3 border transition-all duration-300 " + (activeMood===m.key ? "bg-forest text-ivory border-forest" : "bg-transparent text-forest border-stone hover:border-gold hover:text-gold");
+    b.addEventListener("click", ()=>{ activeMood=m.key; renderMoods(); renderMoodResults(); });
+    moodBtns.appendChild(b);
+  });
+}
+function renderMoodResults(){
+  const mood = MOODS.find(m=>m.key===activeMood);
+  const matched = TREATMENTS.filter(t=>mood.matches.includes(t.name));
+  const c = document.getElementById("moodResults");
+  c.innerHTML = "";
+  matched.forEach((t,i) => {
+    const row = document.createElement("div");
+    row.className = "flex items-center justify-between gap-6 py-6 border-b border-stone/50";
+    row.style.animation = "fadeUpSoft 0.6s ease both";
+    row.style.animationDelay = (i*0.05)+"s";
+    row.innerHTML = '<div><h3 class="font-serif-display text-forest" style="font-size:1.5rem;">'+t.name+'</h3></div>'+
+      '<div class="flex items-center gap-6"><span class="font-serif-display text-gold" style="font-size:1.4rem;">'+formatPrice(t)+'</span>'+
+      '<a href="'+BUSINESS.bookingUrl+'" target="_blank" rel="noopener noreferrer" class="label-eyebrow text-forest border-b border-gold pb-1 hover:text-gold transition-colors duration-300 hidden sm:inline-block">Book</a></div>';
+    c.appendChild(row);
+  });
+}
+renderMoods(); renderMoodResults();
+
+/* reviews carousel */
+let revI = 0;
+const revQuote = document.getElementById("reviewQuote");
+const revName = document.getElementById("reviewName");
+const revCount = document.getElementById("revCount");
+function starSvg(){ return '<svg width="18" height="18" viewBox="0 0 24 24" fill="#B99A6B" stroke="#B99A6B" stroke-width="0"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>'; }
+document.getElementById("reviewStars").innerHTML = starSvg().repeat(5);
+function renderReview(){
+  const r = REVIEWS[revI];
+  revQuote.textContent = "“"+r.quote+"”";
+  revName.textContent = "— "+r.name;
+  revCount.textContent = String(revI+1).padStart(2,"0")+" / "+String(REVIEWS.length).padStart(2,"0");
+  revQuote.style.animation = "none"; void revQuote.offsetWidth; revQuote.style.animation = "fadeUpSoft 0.7s ease both";
+}
+document.getElementById("revPrev").addEventListener("click", ()=>{ revI=(revI-1+REVIEWS.length)%REVIEWS.length; renderReview(); });
+document.getElementById("revNext").addEventListener("click", ()=>{ revI=(revI+1)%REVIEWS.length; renderReview(); });
+renderReview();
+
+/* ============ TREATMENT DIRECTORY ============ */
+let dirFilter = "all", dirQuery = "";
+const dirFiltersEl = document.getElementById("dirFilters");
+DIRECTORY_FILTERS.forEach(f => {
+  const b = document.createElement("button"); b.textContent=f.label;
+  b.className = "label-eyebrow px-4 py-2 border transition-all duration-300 " + (dirFilter===f.key?"bg-forest text-ivory border-forest":"bg-transparent text-forest/70 border-stone hover:border-gold hover:text-gold");
+  b.addEventListener("click", ()=>{ dirFilter=f.key; refreshDirFilters(); renderDir(); });
+  dirFiltersEl.appendChild(b);
+});
+function refreshDirFilters(){
+  [...dirFiltersEl.children].forEach((b,i)=>{ b.className="label-eyebrow px-4 py-2 border transition-all duration-300 " + (dirFilter===DIRECTORY_FILTERS[i].key?"bg-forest text-ivory border-forest":"bg-transparent text-forest/70 border-stone hover:border-gold hover:text-gold"); });
+}
+document.getElementById("dirSearch").addEventListener("input", e=>{ dirQuery=e.target.value; renderDir(); });
+function renderDir(){
+  const q = dirQuery.trim().toLowerCase();
+  const res = TREATMENTS.filter(t => (dirFilter==="all"||t.category===dirFilter) && (!q||t.name.toLowerCase().includes(q)));
+  const c = document.getElementById("dirResults");
+  if(!res.length){ c.innerHTML='<p class="py-16 text-center text-sage font-light italic">No treatments match your search. Try another ritual.</p>'; return; }
+  c.innerHTML = res.map((t,i) =>
+    '<div class="grid grid-cols-12 gap-4 items-center py-5 border-b border-stone/50 group hover:bg-stone/20 transition-colors duration-300 px-2" style="animation:fadeUpSoft 0.4s ease both;animation-delay:'+(Math.min(i,8)*0.03)+'s;">'+
+    '<div class="col-span-12 sm:col-span-6"><h3 class="font-serif-display text-forest" style="font-size:1.3rem;">'+t.name+'</h3></div>'+
+    '<div class="col-span-6 sm:col-span-3"><span class="font-serif-display text-gold" style="font-size:1.4rem;">'+formatPrice(t)+'</span></div>'+
+    '<div class="col-span-6 sm:col-span-3 flex justify-end"><a href="'+BUSINESS.bookingUrl+'" target="_blank" rel="noopener noreferrer" class="label-eyebrow text-forest inline-flex items-center gap-1.5 hover:text-gold transition-colors duration-300">Book <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a></div></div>'
+  ).join("");
+}
+renderDir();
+
+/* contact */
+document.getElementById("contactName").textContent = BUSINESS.name;
+document.getElementById("contactAddr").innerHTML = BUSINESS.addressLines.map(l=>'<span class="block">'+l+'</span>').join("");
+document.getElementById("contactPhone").innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B99A6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> '+BUSINESS.phone;
+document.getElementById("contactEmail").innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B99A6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> '+BUSINESS.email;
+
+/* footer */
+document.getElementById("footerName").textContent = BUSINESS.name;
+document.getElementById("footerTag").textContent = BUSINESS.tagline;
+const fnav = document.getElementById("footerNav");
+NAV_LINKS.forEach(l => {
+  const a = document.createElement("a"); a.href=l.href; a.textContent=l.label;
+  a.className="text-ivory/80 hover:text-gold transition-colors duration-300 font-light"; fnav.appendChild(a);
+});
+document.getElementById("footerContact").innerHTML = BUSINESS.addressLines.map(l=>'<span>'+l+'</span>').join("")+
+  '<a href="'+BUSINESS.phoneHref+'" class="hover:text-gold transition-colors duration-300 pt-2">'+BUSINESS.phone+'</a>'+
+  '<a href="mailto:'+BUSINESS.email+'" class="hover:text-gold transition-colors duration-300">'+BUSINESS.email+'</a>';
+document.getElementById("footerCopy").textContent = "© "+new Date().getFullYear()+" Yasuko. All rights reserved. Tenterden, Kent.";
+
+/* final call */
+document.getElementById("finalCall").textContent = "Call " + BUSINESS.phone;
+
+/* ============ NAV SCROLL + MENU ============ */
+const nav = document.getElementById("nav");
+function onScroll(){ if(window.scrollY>40){ nav.classList.add("glass-dark","border-b","border-white/5"); nav.classList.remove("py-5"); nav.classList.add("py-3"); } else { nav.classList.remove("glass-dark","border-b","border-white/5"); nav.classList.add("py-5"); nav.classList.remove("py-3"); } }
+window.addEventListener("scroll", onScroll, { passive:true }); onScroll();
+
+const mobileMenu = document.getElementById("mobileMenu");
+function openMenu(){ mobileMenu.classList.remove("opacity-0","invisible"); mobileMenu.classList.add("opacity-100","visible"); document.body.style.overflow="hidden"; }
+function closeMenu(){ mobileMenu.classList.add("opacity-0","invisible"); mobileMenu.classList.remove("opacity-100","visible"); document.body.style.overflow=""; }
+document.getElementById("menuOpen").addEventListener("click", openMenu);
+document.getElementById("menuClose").addEventListener("click", closeMenu);
+
+/* ============ REVEAL OBSERVER ============ */
+const obs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("is-visible"); obs.unobserve(e.target); } });
+}, { threshold:0.15, rootMargin:"0px 0px -8% 0px" });
+document.querySelectorAll(".reveal").forEach(el=>obs.observe(el));
+
+/* ============ PRELOADER ============ */
+const pre = document.getElementById("preloader");
+setTimeout(()=>{ pre.classList.add("opacity-0","-translate-y-6"); }, 2600);
+setTimeout(()=>{ pre.remove(); }, 3300);
+
+/* ============ AI CONCIERGE (offline knowledge-base matcher, Yasuko services only) ============ */
+const QUICK = ["What is a Japanese Head Spa?","I want to relax","Tell me about lymphatic drainage","How much is the Head Spa Mini?","Show me the Full Body Experience","How do I book?"];
+const messagesEl = document.getElementById("conciergeMessages");
+let conciergeMessages = [{ role:"assistant", text:"Welcome to Ask Yasuko. I'm your Yasuko concierge — ask me anything about our head spa rituals, lymphatic treatments, massage or beauty treatments." }];
+
+function renderConcierge(){
+  messagesEl.innerHTML = conciergeMessages.map(m =>
+    '<div class="'+(m.role==="user"?"flex justify-end":"flex justify-start")+'"><div class="max-w-[85%] px-4 py-3 text-sm font-light leading-relaxed '+(m.role==="user"?"bg-gold text-forest rounded-2xl rounded-br-sm":"bg-white/5 text-ivory border border-white/10 rounded-2xl rounded-bl-sm")+'">'+esc(m.text)+'</div></div>'
+  ).join("");
+  if(conciergeMessages.length<=1){
+    messagesEl.innerHTML += '<div class="pt-2"><p class="label-eyebrow text-stone/60 mb-3">Quick questions</p><div class="flex flex-wrap gap-2">'+QUICK.map(q=>'<button class="cq text-xs font-light text-ivory/90 border border-white/15 px-3 py-2 rounded-full hover:border-gold hover:text-gold transition-colors duration-300">'+q+'</button>').join("")+'</div></div>';
+    messagesEl.querySelectorAll(".cq").forEach(b=>b.addEventListener("click",()=>conciergeSend(b.textContent)));
+  }
+  messagesEl.scrollTop = messagesEl.scrollHeight;
+}
+
+function conciergeAnswer(q){
+  const s = q.toLowerCase();
+  const has = (...k)=>k.some(k=>s.includes(k));
+  // declined services — not offered at Yasuko
+  if(has("wax","waxing","hollywood","brazilian","nail","manicure","pedicure gel","biab","brow","lamination","tint","tinting","bridal","wedding","bride","men's","men ","for him","injectable","skin booster","lumi eyes")) return "Yasuko doesn't offer that treatment. Our focus is Japanese Head Spa rituals, lymphatic and massage experiences, and a small selection of beauty treatments like The Bacial and Korean Lash Lift. Can I help you find a ritual instead?";
+  if(has("book","appointment","reserve","schedule","how do i book")) return "You can book any treatment directly on our Fresha page — just tap Book Your Ritual. Would you like me to point you to a specific ritual first?";
+  if(has("where","address","location","find you","get there","direction")) return "Yasuko is at 4 Coombe House, Coombe Lane, Tenterden, TN30 6HD, United Kingdom. We'd love to welcome you.";
+  if(has("phone","call","contact","number","email")) return "You can reach us on +44 7854 845704, or email lin_mckenzie@outlook.com.";
+  if(has("head spa","head massage","scalp","japanese head")) return "Our signature Japanese Head Spa begins with a scalp analysis, then tailored shampoos and masks, followed by gentle massage across the scalp, face and neck. The five steps are Analyse, Tailor, Cleanse, Release and Restore. Rituals include Head Spa Mini (£45), Relax & Reset (£60), Revitalise & Recharge (£80), Ultimate Ambience (£100) and the Cherry Blossom experience.";
+  if(has("children","child","kids","7-15","7–15")) return "We offer a Children's Head Spa for ages 7–15 at £20 — a gentle, calming introduction to the head spa ritual.";
+  if(has("cherry blossom","cherry")) return "The Japanese Head Spa 'Cherry Blossom' & Tropic Skin Care is a signature experience — price on enquiry. Please contact Yasuko directly or book on Fresha for details.";
+  if(has("relax","relaxing","unwind","stress","switch off","calm")) return "To relax, try Head Spa Mini (£45), Relax & Reset (£60), Head to Toe (£70), the Japanese Foot Spa (£45) or the Full Body Experience (£139).";
+  if(has("lymphatic","drainage","sculpt","lift facial")) return "Our lymphatic treatments include Headspa / Lymphatic Drainage Facial (£65), Lymphatic Drainage Sculpt & Lift Facial (£49) and Full Body Lymphatic Drainage Massage (£67).";
+  if(has("massage","tension","body","full body")) return "For massage and full-body relaxation, try Head to Toe (£70), Full Body Lymphatic Drainage Massage (£67) or the Full Body Experience (£139).";
+  if(has("full body experience","139")) return "The Full Body Experience is £139 — a complete journey of head spa, massage and lymphatic relaxation.";
+  if(has("head to toe")) return "Head to Toe is £70 — an indulgent journey combining a soothing Japanese head massage with relaxing neck, shoulder and back massage, finishing with a Japanese foot spa.";
+  if(has("facial","bacial","back facial")) return "The Bacial (Back Facial) is £29 — a deep-cleansing treatment for the back. For skin glow, we also offer lymphatic drainage facials.";
+  if(has("lash","korean lash")) return "We offer the Korean Lash Lift at £55 for a natural, lifted lash effect.";
+  if(has("foot spa","foot","feet")) return "The Japanese Foot Spa is £45 — a serene foot spa experience designed to help you unwind and leave feeling refreshed.";
+  if(has("price","cost","how much","£")) return "Our treatments range from £20 (Children's Head Spa) to £139 (Full Body Experience). Tell me which ritual you're curious about and I'll share the exact price.";
+  if(has("review","rating","recommend","feedback")) return "We're rated 5.0 out of 5 stars. Clients describe the head spa as 'total bliss' and the warm misting as 'the most relaxing thing I've ever experienced'.";
+  if(has("hi","hello","hey","thank")) return "Hello — I'm Ask Yasuko, your concierge for Yasuko Japanese Head Spa in Tenterden. Ask me about our head spa rituals, lymphatic treatments, massage or beauty treatments.";
+  return "I don't have confirmed information about that. Please contact Yasuko directly on +44 7854 845704 for personalised advice, or book on Fresha.";
+}
+
+function conciergeSend(text){
+  const q = (text ?? document.getElementById("conciergeInput").value).trim();
+  if(!q) return;
+  document.getElementById("conciergeInput").value = "";
+  conciergeMessages.push({ role:"user", text:q });
+  renderConcierge();
+  const indicator = document.createElement("div");
+  indicator.className="flex justify-start";
+  indicator.innerHTML='<div class="bg-white/5 border border-white/10 rounded-2xl rounded-bl-sm px-4 py-3 flex gap-1.5"><span class="w-1.5 h-1.5 bg-gold rounded-full animate-bounce" style="animation-delay:0ms"></span><span class="w-1.5 h-1.5 bg-gold rounded-full animate-bounce" style="animation-delay:150ms"></span><span class="w-1.5 h-1.5 bg-gold rounded-full animate-bounce" style="animation-delay:300ms"></span></div>';
+  messagesEl.appendChild(indicator);
+  messagesEl.scrollTop = messagesEl.scrollHeight;
+  setTimeout(()=>{
+    indicator.remove();
+    conciergeMessages.push({ role:"assistant", text: conciergeAnswer(q) });
+    renderConcierge();
+  }, 650);
+}
+
+const overlay = document.getElementById("conciergeOverlay");
+const panel = document.getElementById("conciergePanel");
+function openConcierge(){ overlay.classList.remove("invisible","opacity-0"); overlay.classList.add("visible","opacity-100"); panel.classList.remove("translate-y-full","sm:translate-y-8"); document.body.style.overflow="hidden"; renderConcierge(); }
+function closeConcierge(){ overlay.classList.add("invisible","opacity-0"); overlay.classList.remove("visible","opacity-100"); panel.classList.add("translate-y-full","sm:translate-y-8"); document.body.style.overflow=""; }
+document.getElementById("conciergeOpen").addEventListener("click", openConcierge);
+document.getElementById("conciergeClose").addEventListener("click", closeConcierge);
+document.getElementById("conciergeBackdrop").addEventListener("click", closeConcierge);
+document.getElementById("conciergeForm").addEventListener("submit", e=>{ e.preventDefault(); conciergeSend(); });
+renderConcierge();
+</script>
+</body>
+</html>
