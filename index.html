@@ -346,12 +346,12 @@ body{ background:var(--ivory); color:var(--forest); font-family:'Plus Jakarta Sa
 const BUSINESS = {
   name: "Yasuko",
   tagline: "Japanese Head Spa · Tenterden",
-  addressLines: ["4 Coombe House", "Coombe Lane", "Tenterden", "TN30 6HD", "United Kingdom"],
-  phone: "+44 7854 845704",
+  addressLines: ["Watchmakers House", "30 High Street", "Tenterden", "TN30 6AR", "United Kingdom"],
+  phone: "07854845704",
   phoneHref: "tel:+447854845704",
   email: "lin_mckenzie@outlook.com",
   bookingUrl: "https://www.fresha.com/en-GB/a/the-beauty-ritual-tenterden-coombe-lane-sloreccs/all-offer?menu=true&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUBTs9wZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHss5G2qheIEW6_LJUHTKr5j1sWGhhLF_rCTmCyIxzebuEqhv1meeBS2MwmoP_aem_k1qlGehSi9PkdUwMyjzMWg",
-  mapsUrl: "https://www.google.com/maps/search/?api=1&query=The+Beauty+Ritual+4+Coombe+House+Coombe+Lane+Tenterden+TN30+6HD"
+  mapsUrl: "https://www.google.com/maps/search/?api=1&query=Watchmakers+House+30+High+Street+Tenterden+TN30+6AR"
 };
 
 const IMAGES = {
@@ -376,7 +376,7 @@ const TREATMENTS = [
   { name:"Relax & Reset", category:"head-spa", price:60 },
   { name:"Revitalise & Recharge", category:"head-spa", price:80 },
   { name:"Ultimate Ambience", category:"head-spa", price:100 },
-  { name:"Japanese Head Spa 'Cherry Blossom' & Tropic Skin Care", category:"head-spa", note:"Enquire" },
+  { name:"Japanese Head Spa 'Cherry Blossom' & Tropic Skin Care", category:"head-spa", price:75 },
   { name:"Children's Head Spa (7–15 years)", category:"head-spa", price:20 },
   // Wellness, Massage & Lymphatic
   { name:"Head to Toe", category:"wellness", price:70, description:"An indulgent journey combining a soothing Japanese head massage with relaxing neck, shoulder and back massage, finishing with a peppermint & jasmine-inspired Japanese foot spa." },
@@ -388,7 +388,7 @@ const TREATMENTS = [
   { name:"Japanese Foot Spa", category:"foot-spa", price:45, description:"A serene foot spa experience designed to help you unwind and leave feeling refreshed." },
   // Facial & Beauty
   { name:"The Bacial (Back Facial)", category:"facial-beauty", price:29 },
-  { name:"Korean Lash Lift", category:"facial-beauty", price:55 }
+  { name:"Korean Lash Lift", category:"facial-beauty", price:45 }
 ];
 
 const DIRECTORY_FILTERS = [
@@ -638,22 +638,22 @@ function conciergeAnswer(q){
   if(has("wax","waxing","hollywood","brazilian","nail","manicure","pedicure gel","biab","brow","lamination","tint","tinting","bridal","wedding","bride","men's","men ","for him","injectable","skin booster","lumi eyes")) return "Yasuko doesn't offer that treatment. Our focus is Japanese Head Spa rituals, lymphatic and massage experiences, and a small selection of beauty treatments like The Bacial and Korean Lash Lift. Can I help you find a ritual instead?";
   if(has("book","appointment","reserve","schedule","how do i book")) return "You can book any treatment directly on our Fresha page — just tap Book Your Ritual. Would you like me to point you to a specific ritual first?";
   if(has("where","address","location","find you","get there","direction")) return "Yasuko is at 4 Coombe House, Coombe Lane, Tenterden, TN30 6HD, United Kingdom. We'd love to welcome you.";
-  if(has("phone","call","contact","number","email")) return "You can reach us on +44 7854 845704, or email lin_mckenzie@outlook.com.";
+  if(has("phone","call","contact","number","email")) return "You can reach us on 07854845704, or email lin_mckenzie@outlook.com.";
   if(has("head spa","head massage","scalp","japanese head")) return "Our signature Japanese Head Spa begins with a scalp analysis, then tailored shampoos and masks, followed by gentle massage across the scalp, face and neck. The five steps are Analyse, Tailor, Cleanse, Release and Restore. Rituals include Head Spa Mini (£45), Relax & Reset (£60), Revitalise & Recharge (£80), Ultimate Ambience (£100) and the Cherry Blossom experience.";
   if(has("children","child","kids","7-15","7–15")) return "We offer a Children's Head Spa for ages 7–15 at £20 — a gentle, calming introduction to the head spa ritual.";
-  if(has("cherry blossom","cherry")) return "The Japanese Head Spa 'Cherry Blossom' & Tropic Skin Care is a signature experience — price on enquiry. Please contact Yasuko directly or book on Fresha for details.";
+  if(has("cherry blossom","cherry")) return "The Japanese Head Spa 'Cherry Blossom' & Tropic Skin Care is £75 — a signature head spa and facial experience. You can book it on Fresha.";
   if(has("relax","relaxing","unwind","stress","switch off","calm")) return "To relax, try Head Spa Mini (£45), Relax & Reset (£60), Head to Toe (£70), the Japanese Foot Spa (£45) or the Full Body Experience (£139).";
   if(has("lymphatic","drainage","sculpt","lift facial")) return "Our lymphatic treatments include Headspa / Lymphatic Drainage Facial (£65), Lymphatic Drainage Sculpt & Lift Facial (£49) and Full Body Lymphatic Drainage Massage (£67).";
   if(has("massage","tension","body","full body")) return "For massage and full-body relaxation, try Head to Toe (£70), Full Body Lymphatic Drainage Massage (£67) or the Full Body Experience (£139).";
   if(has("full body experience","139")) return "The Full Body Experience is £139 — a complete journey of head spa, massage and lymphatic relaxation.";
   if(has("head to toe")) return "Head to Toe is £70 — an indulgent journey combining a soothing Japanese head massage with relaxing neck, shoulder and back massage, finishing with a Japanese foot spa.";
   if(has("facial","bacial","back facial")) return "The Bacial (Back Facial) is £29 — a deep-cleansing treatment for the back. For skin glow, we also offer lymphatic drainage facials.";
-  if(has("lash","korean lash")) return "We offer the Korean Lash Lift at £55 for a natural, lifted lash effect.";
+  if(has("lash","korean lash")) return "We offer the Korean Lash Lift at £45 for a natural, lifted lash effect.";
   if(has("foot spa","foot","feet")) return "The Japanese Foot Spa is £45 — a serene foot spa experience designed to help you unwind and leave feeling refreshed.";
   if(has("price","cost","how much","£")) return "Our treatments range from £20 (Children's Head Spa) to £139 (Full Body Experience). Tell me which ritual you're curious about and I'll share the exact price.";
   if(has("review","rating","recommend","feedback")) return "We're rated 5.0 out of 5 stars. Clients describe the head spa as 'total bliss' and the warm misting as 'the most relaxing thing I've ever experienced'.";
   if(has("hi","hello","hey","thank")) return "Hello — I'm Ask Yasuko, your concierge for Yasuko Japanese Head Spa in Tenterden. Ask me about our head spa rituals, lymphatic treatments, massage or beauty treatments.";
-  return "I don't have confirmed information about that. Please contact Yasuko directly on +44 7854 845704 for personalised advice, or book on Fresha.";
+  return "I don't have confirmed information about that. Please contact Yasuko directly on 07854845704 for personalised advice, or book on Fresha.";
 }
 
 function conciergeSend(text){
