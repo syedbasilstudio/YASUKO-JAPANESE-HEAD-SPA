@@ -398,12 +398,12 @@ const TREATMENTS = [
   { name:"Full Body Lymphatic Drainage Massage", category:"wellness", price:67 },
   { name:"Full Body Experience", category:"wellness", price:139 },
   // Foot Spa
-  { name:"Japanese Foot Spa", category:"foot-spa", price:45, note: "Patch test required 24 hours prior to appointment"} ,  description:"A serene foot spa experience designed to help you unwind and leave feeling refreshed." },
+  { name:"Japanese Foot Spa", category:"foot-spa", price:45, description:"A serene foot spa experience designed to help you unwind and leave feeling refreshed." },
   // Facial & Beauty
   { name:"The Bacial (Back Facial)", category:"facial-beauty", price:29 },
-  { name:"Korean Lash Lift", category:"facial-beauty", price:45 }
- { name: "Gents Head Spa",category: "head-spa",price:55 }
-  ];
+  { name:"Korean Lash Lift", category:"facial-beauty", price:45, note:"Patch test required 24 hours prior to appointment" },
+  { name:"Gents Head Spa", category:"head-spa", price:55 }
+];
 
 const DIRECTORY_FILTERS = [
   { key:"all", label:"All" },
@@ -445,7 +445,7 @@ const NAV_LINKS = [
   { label:"Visit", href:"#visit" }
 ];
 
-const formatPrice = (t) => typeof t.price === "number" ? "£"+t.price : (t.note || "");
+const formatPrice = (t) => { if(typeof t.price!=="number") return t.note||""; return t.note ? "£"+t.price+" · "+t.note : "£"+t.price; };
 const esc = (s) => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 
 /* ============ INIT ASSETS ============ */
@@ -664,7 +664,8 @@ function conciergeAnswer(q){
   if(has("full body experience","139")) return "The Full Body Experience is £139 — a complete journey of head spa, massage and lymphatic relaxation.";
   if(has("head to toe")) return "Head to Toe is £70 — an indulgent journey combining a soothing Japanese head massage with relaxing neck, shoulder and back massage, finishing with a Japanese foot spa.";
   if(has("facial","bacial","back facial")) return "The Bacial (Back Facial) is £29 — a deep-cleansing treatment for the back. For skin glow, we also offer lymphatic drainage facials.";
-  if(has("lash","korean lash")) return "We offer the Korean Lash Lift at £45 for a natural, lifted lash effect.";
+  if(has("lash","korean lash")) return "We offer the Korean Lash Lift at £45 for a natural, lifted lash effect. A patch test is required 24 hours prior to your appointment.";
+  if(has("gents","gent","men's head","man's head","male head")) return "Our Gents Head Spa is £55 — a head spa ritual tailored for gentlemen. You can book it on Fresha.";
   if(has("foot spa","foot","feet")) return "The Japanese Foot Spa is £45 — a serene foot spa experience designed to help you unwind and leave feeling refreshed.";
   if(has("price","cost","how much","£")) return "Our treatments range from £20 (Children's Head Spa) to £139 (Full Body Experience). Tell me which ritual you're curious about and I'll share the exact price.";
   if(has("review","rating","recommend","feedback")) return "We're rated 5.0 out of 5 stars. Clients describe the head spa as 'total bliss' and the warm misting as 'the most relaxing thing I've ever experienced'.";
