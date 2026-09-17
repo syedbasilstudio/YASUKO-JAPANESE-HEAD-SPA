@@ -90,6 +90,7 @@ body{ background:var(--ivory); color:var(--forest); font-family:'Plus Jakarta Sa
       <a href="#rituals" class="label-eyebrow text-stone/80 hover:text-gold transition-colors duration-300">Rituals</a>
       <a href="#wellness" class="label-eyebrow text-stone/80 hover:text-gold transition-colors duration-300">Wellness</a>
       <a href="#reviews" class="label-eyebrow text-stone/80 hover:text-gold transition-colors duration-300">Reviews</a>
+      <a href="#gallery" class="label-eyebrow text-stone/80 hover:text-gold transition-colors duration-300">Gallery</a>
       <a href="#directory" class="label-eyebrow text-stone/80 hover:text-gold transition-colors duration-300">Price List</a>
       <a href="#visit" class="label-eyebrow text-stone/80 hover:text-gold transition-colors duration-300">Visit</a>
     </nav>
@@ -183,6 +184,26 @@ body{ background:var(--ivory); color:var(--forest); font-family:'Plus Jakarta Sa
       <div class="reveal reveal-delay-2"><a id="wellnessBook" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex label-eyebrow px-8 py-4 mt-12 text-ivory border border-ivory/40 hover:bg-ivory hover:text-forest transition-colors duration-300">Explore Wellness</a></div>
     </div>
     <div class="lg:col-span-7"><div class="reveal reveal-delay-1" id="wellnessList"></div></div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery" class="bg-forest text-ivory py-24 sm:py-32 overflow-hidden">
+  <div class="mx-auto max-w-[1200px] px-6 sm:px-10">
+    <div class="reveal text-center">
+      <span class="label-eyebrow inline-block text-stone/80">The Experience</span>
+    </div>
+    <div class="reveal reveal-delay-1 mt-6 text-center">
+      <h2 class="font-serif-display text-ivory text-balance" style="font-size:clamp(2.2rem,5vw,4rem);line-height:1.02;">Inside the ritual.</h2>
+    </div>
+    <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
+      <figure class="reveal group relative overflow-hidden">
+        <img src="https://media.base44.com/images/public/6a947799517ec63bc1c857d0/1c59270d4_received_3256813807844626.jpeg" alt="Yasuko practitioner in white polo" class="w-full h-full object-cover aspect-[3/4] transition-transform duration-[1.8s] ease-out group-hover:scale-105" loading="lazy" />
+      </figure>
+      <figure class="reveal reveal-delay-1 group relative overflow-hidden">
+        <img src="https://media.base44.com/images/public/6a947799517ec63bc1c857d0/a3cf19ca7_received_1356972296508495.jpeg" alt="Japanese head spa treatment in progress" class="w-full h-full object-cover aspect-[3/4] transition-transform duration-[1.8s] ease-out group-hover:scale-105" loading="lazy" />
+      </figure>
+    </div>
   </div>
 </section>
 
@@ -440,6 +461,7 @@ const NAV_LINKS = [
   { label:"Head Spa", href:"#head-spa" },
   { label:"Rituals", href:"#rituals" },
   { label:"Wellness", href:"#wellness" },
+  { label:"Gallery", href:"#gallery" },
   { label:"Reviews", href:"#reviews" },
   { label:"Price List", href:"#directory" },
   { label:"Visit", href:"#visit" }
